@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>How semantic search projects fail</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/dracula.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h2>How semantic search projects</h2>
+					<img src="img/cat.png" height="300px" style="margin: 0px;">
+					<h1>FAIL</h1>
+					<small>Roman Grebennikov | Delivery Hero SE | MICES 2024</small>
+				</section>
+                <section>
+                        <h2>whoami</h2>
+                        <p>🔎</p>
+                        <ul>
+                                <li>PhD in CS, quant trading, credit scoring</li>
+                                <li><strong>Findify</strong>: e-commerce search, personalization</li>
+                                <li><strong>Delivery Hero</strong>: food search, LLMs</li>
+                                <li><strong>Opensource</strong>: Metarank, Nixiesearch</li>
+                        </ul>
+                        <p>
+                                <img src="img/dj.jpeg" height="200px">
+                                <img src="img/foodora.webp" height="200px">
+                        </p>
+                </section>
+                <section>
+                	<h2>Delivery Hero</h2>
+                	<p><img src="img/brands.png" height="200px"></p>
+                	<ul>
+                		<li>Last-mile food & groceries delivery</li>
+                		<li><strong>70</strong> countries, <strong>20</strong> languages</li>
+                		<li><strong>1M</strong> restaurants & local vendors</li>
+                	</ul>
+                </section>
+                <section>
+                	<h2>Survivor bias</h2>
+                	<img src="img/survivor1.jpg" height="500px">
+                </section>
+                <section>
+                	<h2>Survivor bias on conferences</h2>
+                	<img src="img/survivor2.png" height="500px">
+                </section>
+                <section>
+                        <h2>Agenda</h2>
+                        <p>🚀</p>
+                        <ul>
+                                <li class="fragment">Do embeddings matter?</li>
+                                <li class="fragment">Relevance tuning with semantic search</li>
+                                <li class="fragment">Multilingual search</li>
+                                <li class="fragment">Semantic search halting problem</li>
+                        </ul>
+                </section>
+                <section>
+                	<h2>Product search in Q-Commerce</h2>
+                	<table>
+                		<tbody>
+                		<tr>
+                			<td>
+                				<img src="img/peya.jpg" height="400px">
+                				<img src="img/talabat.jpg" height="400px">
+                			</td>
+                			<td style="vertical-align: middle;">
+                				<ul>
+                					<li>Large inventory: ~20M items</li>
+                					<li>Diverse multi-token requests</li>
+                					<li>10% (<strong>OMG!</strong>) zero results rate</li>
+                				</ul>
+                				<br><br/>
+                				<p>Multi-token, long tail queries 🔴</p>
+                			</td>
+                		</tr>
+                		</tbody>
+                	</table>
+                </section>
+                <section>
+                	<h2>Precision vs Recall</h2>
+                	<p><img src="img/cola.png" height="300px"></p>
+                	<ul>
+                		<li><strong>coca AND cola AND zero</strong>: zero results</li>
+                		<li><strong>coca OR cola OR zero</strong>: matches pepsi</li>
+                		<li><strong>coca AND cola AND (zero OR light)</strong>: good luck</li>
+                	</ul>
+                </section>
+                <section>
+                	<h2>yay semantic search!</h2>
+                	<p><img src="img/hype.jpg" height="300px"></p>
+                	<ul>
+                		<li>Embed documents with SBERT/OpenAI</li>
+                		<li>Install a Vector© Search® Database™ 🚀</li>
+                		<li>...</li>
+                		<li>PROFIT</li>
+                	</ul>
+                </section>
+                <section>
+                	<h2>Customer intent</h2>
+                	<img src="img/tomato-e5.png" height="450px">
+                </section>
+                <section>
+                	<h2>Customer intent</h2>
+                	<img src="img/tomato-e5-cvr.png" height="450px">
+                </section>
+                <section>
+                	<img src="img/mistake.png" height="400px">
+                </section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+                history: true,
+                controls: true,
+                progress: true,
+                width: 1200,
+                transition: 'none',
+                slideNumber: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
