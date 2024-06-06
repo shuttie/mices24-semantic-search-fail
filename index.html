@@ -113,7 +113,98 @@
                 	<img src="img/tomato-e5-cvr.png" height="450px">
                 </section>
                 <section>
-                	<img src="img/mistake.png" height="400px">
+                	<p><img src="img/mistake.png" height="400px"></p>
+                	<ul>
+                		<li><strong>Relevance is subjective</strong>: depends on intent</li>
+                		<li><strong>Embedding model</strong>: no idea about your audience</li>
+                	</ul>
+                </section>
+                <section>
+                	<h2>Bigger models?</h2>
+                	<img src="img/cats.png">
+                </section>
+                <section>
+                	<h3>demo</h3>
+                </section>
+                <section>
+                	<h2>Does size matter?</h2>
+                	<p><img src="img/bike.png"></p>
+                	<ul>
+                		<li>Big models: more into small details</li>
+                		<li>Still no idea about customer intent :(</li>
+                	</ul>
+                </section>
+                <section>
+                	<h2>Semantic search relevance tuning</h2>
+                	<ul>
+                		<li><strong>Lexical search</strong>: relevance labels, tinker with retrieval</li>
+                		<li><strong>Semantic search</strong>: <span class="fragment">relevance labels, tinker with retrieval</span></li>
+
+                	</ul>
+                	<p class="fragment"><img src="img/pizza.png" height="400px"></p>
+                </section>
+                <section>
+                	<h2>First step is still the same</h2>
+                	<p>You cannot improve search if you cannot measure it</p>
+                	<img src="img/quepid.png" height="450px">
+                </section>
+                <section>
+                	<h2>Relevance tuning?</h2>
+                	<ul>
+                		<li><strong>Lexical search</strong>: boosts, synonyms</li>
+                		<li><strong>Semantic search</strong>: fine-tuning</li>
+                	</ul>
+                </section>
+				<section>
+					<h2>Fine-tuning</h2>
+					<p><img src="img/tune.png" height="400px"></p>
+					<ul>
+						<li>Relevant docs: make them closer to query</li>
+						<li>Irrelevant docs: make them further from query</li>
+					</ul>
+				</section>
+				<section>
+					<h2>What is positive and negative?</h2>
+					<p><img src="img/cvr-noise.png" height="400px"></p>
+					<ul>
+						<li>1 click, 3 impressions = 33% CTR?</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Mixing clicks and confidence</h2>
+					<p><img src="img/bayes-cvr.png"></p>
+					<ul>
+						<li><strong>Bayes correction</strong>: mix prior and posterior</li>
+						<li><strong>Low confidence</strong>: strong shift to avg</li>
+						<li><strong>High confidence</strong>: almost no shift to avg</li>
+					</ul>
+					<p><small>[1]: Haystack US22: R.Kriegler, <a
+								href="https://www.youtube.com/watch?v=wa88XShl7hs">Modelling implicit user feedback for
+								optimising
+								e-commerce search</a></small></p>
+				</section>
+				<section>
+					<h2>Bayes corrected CVR as label</h2>
+					<p><img src="img/cvr-noise-bayes.png" height="550px"></p>
+				</section>
+				<section>
+					<h2>Bayes corrected CVR as label</h2>
+					<p><img src="img/cvr-noise-bayes2.png" height="550px"></p>
+				</section>
+				<section>
+					<h3>demo</h3>
+				</section>
+                <section>
+                	<h2>Multilingual search</h2>
+                	<p><strong>Problem:</strong> all MTEB leaderboard models are English</p>
+                	<p><img src="img/e5m2.png">&nbsp;<img src="img/e5m.png"></p>
+                	<small>[1] L.Wang et al. Multilingual E5 Text Embeddings: A Technical Report</small>
+                </section>
+                <section>
+                	todo
+                </section>
+                <section>
+                	<h2>Semantic search halting problem</h2>
                 </section>
 			</div>
 		</div>
