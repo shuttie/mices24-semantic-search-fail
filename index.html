@@ -22,204 +22,293 @@
                     <h1>FAIL</h1>
                     <small>Roman Grebennikov | Delivery Hero SE | MICES 2024</small>
                 </section>
-        <section>
-            <h2>whoami</h2>
-            <p>🔎</p>
-            <ul>
-                <li>PhD in CS, quant trading, credit scoring</li>
-                <li><strong>Findify</strong>: e-commerce search, personalization</li>
-                <li><strong>Delivery Hero</strong>: food search, LLMs</li>
-                <li><strong>Opensource</strong>: Metarank, Nixiesearch</li>
-            </ul>
-            <p>
-                <img src="img/dj.jpeg" height="200px">
-                <img src="img/foodora.webp" height="200px">
-            </p>
-        </section>
-        <section>
-            <h2>Delivery Hero</h2>
-            <p><img src="img/brands.png" height="200px"></p>
-            <ul>
-                <li>Last-mile food & groceries delivery</li>
-                <li><strong>70</strong> countries, <strong>20</strong> languages</li>
-                <li><strong>1M</strong> restaurants & local vendors</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Survivor bias</h2>
-            <img src="img/survivor1.jpg" height="500px">
-        </section>
-        <section>
-            <h2>Survivor bias on conferences</h2>
-            <img src="img/survivor2.png" height="500px">
-        </section>
-        <section>
-            <h2>Agenda</h2>
-            <p>🚀</p>
-            <ul>
-                <li class="fragment">Do embeddings matter?</li>
-                <li class="fragment">Relevance tuning with semantic search</li>
-                <li class="fragment">Multilingual search</li>
-                <li class="fragment">Semantic search halting problem</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Product search in Q-Commerce</h2>
-            <table>
-                <tbody>
-                <tr>
-                    <td>
-                        <img src="img/peya.jpg" height="400px">
-                        <img src="img/talabat.jpg" height="400px">
-                    </td>
-                    <td style="vertical-align: middle;">
-                        <ul>
-                            <li>Large inventory: ~20M items</li>
-                            <li>Diverse multi-token requests</li>
-                            <li>10% (<strong>OMG!</strong>) zero results rate</li>
-                        </ul>
-                        <br><br/>
-                        <p>Multi-token, long tail queries 🔴</p>
-                    </td>
-                </tr>
-                </tbody>
-            </table>
-        </section>
-        <section>
-            <h2>Precision vs Recall</h2>
-            <p><img src="img/cola.png" height="300px"></p>
-            <ul>
-                <li><strong>coca AND cola AND zero</strong>: zero results</li>
-                <li><strong>coca OR cola OR zero</strong>: matches pepsi</li>
-                <li><strong>coca AND cola AND (zero OR light)</strong>: good luck</li>
-            </ul>
-        </section>
-        <section>
-            <h2>yay semantic search!</h2>
-            <p><img src="img/hype.jpg" height="300px"></p>
-            <ul>
-                <li>Embed documents with SBERT/OpenAI</li>
-                <li>Install a Vector© Search® Database™ 🚀</li>
-                <li>...</li>
-                <li>PROFIT</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Customer intent</h2>
-            <img src="img/tomato-e5.png" height="450px">
-        </section>
-        <section>
-            <h2>Customer intent</h2>
-            <img src="img/tomato-e5-cvr.png" height="450px">
-        </section>
-        <section>
-            <p><img src="img/mistake.png" height="400px"></p>
-            <ul>
-                <li><strong>Relevance is subjective</strong>: depends on intent</li>
-                <li><strong>Embedding model</strong>: no idea about your audience</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Bigger models?</h2>
-            <img src="img/cats.png">
-        </section>
-        <section>
-            <h3>demo</h3>
-        </section>
-        <section>
-            <h2>Does size matter?</h2>
-            <p><img src="img/bike.png"></p>
-            <ul>
-                <li>Big models: more into small details</li>
-                <li>Still no idea about customer intent :(</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Semantic search relevance tuning</h2>
-            <ul>
-                <li><strong>Lexical search</strong>: relevance labels, tinker with retrieval</li>
-                <li><strong>Semantic search</strong>: <span class="fragment">relevance labels, tinker with retrieval</span></li>
+		        <section>
+		            <h2>whoami</h2>
+		            <p>🔎</p>
+		            <ul>
+		                <li>PhD in CS, quant trading, credit scoring</li>
+		                <li><strong>Findify</strong>: e-commerce search, personalization</li>
+		                <li><strong>Delivery Hero</strong>: food search, LLMs</li>
+		                <li><strong>Opensource</strong>: Metarank, Nixiesearch</li>
+		            </ul>
+		            <p>
+		                <img src="img/dj.jpeg" height="200px">
+		                <img src="img/foodora.webp" height="200px">
+		            </p>
+		        </section>
+		        <section>
+		            <h2>Delivery Hero</h2>
+		            <p><img src="img/brands.png" height="200px"></p>
+		            <ul>
+		                <li>Last-mile food & groceries delivery</li>
+		                <li><strong>70</strong> countries, <strong>20</strong> languages</li>
+		                <li><strong>1M</strong> restaurants & local vendors</li>
+		            </ul>
+		        </section>
+		        <section>
+		            <h2>Survivor bias</h2>
+		            <img src="img/survivor1.jpg" height="500px">
+		        </section>
+		        <section>
+		            <h2>Survivor bias on conferences</h2>
+		            <img src="img/survivor2.png" height="500px">
+		        </section>
+		        <section>
+		            <h2>Agenda</h2>
+		            <p>🚀</p>
+		            <ul>
+		                <li class="fragment">Do embeddings matter?</li>
+		                <li class="fragment">Relevance tuning with semantic search</li>
+		                <li class="fragment">Multilingual search</li>
+		                <li class="fragment">Semantic search halting problem</li>
+		            </ul>
+		        </section>
+		        <section>
+		            <h2>Product search in Q-Commerce</h2>
+		            <table>
+		                <tbody>
+		                <tr>
+		                    <td>
+		                        <img src="img/peya.jpg" height="400px">
+		                        <img src="img/talabat.jpg" height="400px">
+		                    </td>
+		                    <td style="vertical-align: middle;">
+		                        <ul>
+		                            <li>Large inventory: ~20M items</li>
+		                            <li>Diverse multi-token requests</li>
+		                            <li>10% (<strong>OMG!</strong>) zero results rate</li>
+		                        </ul>
+		                        <br><br/>
+		                        <p>Multi-token, long tail queries 🔴</p>
+		                    </td>
+		                </tr>
+		                </tbody>
+		            </table>
+		        </section>
+		        <section>
+		            <h2>Precision vs Recall</h2>
+		            <p><img src="img/cola.png" height="300px"></p>
+		            <ul>
+		                <li><strong>coca AND cola AND zero</strong>: zero results</li>
+		                <li><strong>coca OR cola OR zero</strong>: matches pepsi</li>
+		                <li><strong>coca AND cola AND (zero OR light)</strong>: good luck</li>
+		            </ul>
+		        </section>
+		        <section>
+		            <h2>yay semantic search!</h2>
+		            <p><img src="img/hype.jpg" height="300px"></p>
+		            <ul>
+		                <li>Embed documents with SBERT/OpenAI</li>
+		                <li>Install a Vector© Search® Database™ 🚀</li>
+		                <li>...</li>
+		                <li>PROFIT</li>
+		            </ul>
+		        </section>
+		        <section>
+		            <h2>Customer intent</h2>
+		            <img src="img/tomato-e5.png" height="450px">
+		        </section>
+		        <section>
+		            <h2>Customer intent</h2>
+		            <img src="img/tomato-e5-cvr.png" height="450px">
+		        </section>
+		        <section>
+		            <p><img src="img/mistake.png" height="400px"></p>
+		            <ul>
+		                <li><strong>Relevance is subjective</strong>: depends on intent</li>
+		                <li><strong>Embedding model</strong>: no idea about your audience</li>
+		            </ul>
+		        </section>
+		        <section>
+		            <h2>Bigger models?</h2>
+		            <img src="img/cats.png">
+		        </section>
+		        <section>
+		            <h3>demo</h3>
+		        </section>
+		        <section>
+		            <h2>Does size matter?</h2>
+		            <p><img src="img/bike.png"></p>
+		            <ul>
+		                <li>Big models: more into small details</li>
+		                <li>Still no idea about customer intent :(</li>
+		            </ul>
+		        </section>
+		        <section>
+		            <h2>Semantic search relevance tuning</h2>
+		            <ul>
+		                <li><strong>Lexical search</strong>: relevance labels, tinker with retrieval</li>
+		                <li><strong>Semantic search</strong>: <span class="fragment">relevance labels, tinker with retrieval</span></li>
 
-            </ul>
-            <p class="fragment"><img src="img/pizza.png" height="400px"></p>
-        </section>
-        <section>
-            <h2>First step is still the same</h2>
-            <p>You cannot improve search if you cannot measure it</p>
-            <img src="img/quepid.png" height="450px">
-        </section>
-        <section>
-            <h2>Relevance tuning?</h2>
-            <ul>
-                <li><strong>Lexical search</strong>: boosts, synonyms</li>
-                <li><strong>Semantic search</strong>: fine-tuning</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Fine-tuning</h2>
-            <p><img src="img/tune.png" height="400px"></p>
-            <ul>
-                <li>Relevant docs: make them closer to query</li>
-                <li>Irrelevant docs: make them further from query</li>
-            </ul>
-        </section>
-        <section>
-            <h2>What is positive and negative?</h2>
-            <p><img src="img/cvr-noise.png" height="400px"></p>
-            <ul>
-                <li>1 click, 3 impressions = 33% CTR?</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Mixing clicks and confidence</h2>
-            <p><img src="img/bayes-cvr.png"></p>
-            <ul>
-                <li><strong>Bayes correction</strong>: mix prior and posterior</li>
-                <li><strong>Low confidence</strong>: strong shift to avg</li>
-                <li><strong>High confidence</strong>: almost no shift to avg</li>
-            </ul>
-            <p><small>[1]: Haystack US22: R.Kriegler, <a
-                        href="https://www.youtube.com/watch?v=wa88XShl7hs">Modelling implicit user feedback for
-                        optimising
-                        e-commerce search</a></small></p>
-        </section>
-        <section>
-            <h2>Bayes corrected CVR as label</h2>
-            <p><img src="img/cvr-noise-bayes.png" height="550px"></p>
-        </section>
-        <section>
-            <h2>Bayes corrected CVR as label</h2>
-            <p><img src="img/cvr-noise-bayes2.png" height="550px"></p>
-        </section>
-        <section>
-            <h3>demo</h3>
-        </section>
-        <section>
-          <h2>Implicit labels are noisy</h2>
-          <ul>
-            <li>High confidence, avg CVR: oops</li>
-            <li>Long tail queries: not enough data to reach confidence</li>
-          </ul>
-        </section>
-        <section>
-          <h2>Future plans</h2>
-          <ul>
-            <li>LLM relabeling: use explicit labels to fine-tune Cross-Encoder</li>
-            <li>Distillation: train embeddings on re-labeled dataset</li>
-          </ul>
-        </section>
-        <section>
-            <h2>Multilingual search</h2>
-            <p><strong>Problem:</strong> all MTEB leaderboard models are English</p>
-            <p><img src="img/e5m2.png">&nbsp;<img src="img/e5m.png"></p>
-            <small>[1] L.Wang et al. Multilingual E5 Text Embeddings: A Technical Report</small>
-        </section>
-        <section>
-            <h2>todo</h2>
-        </section>
-        <section>
-            <h2>Semantic search halting problem</h2>
-        </section>
+		            </ul>
+		            <p class="fragment"><img src="img/pizza.png" height="400px"></p>
+		        </section>
+		        <section>
+		            <h2>First step is still the same</h2>
+		            <p>You cannot improve search if you cannot measure it</p>
+		            <img src="img/quepid.png" height="450px">
+		        </section>
+		        <section>
+		            <h2>Relevance tuning?</h2>
+		            <ul>
+		                <li><strong>Lexical search</strong>: boosts, synonyms, queries</li>
+		                <li><strong>Semantic search</strong>: fine-tuning</li>
+		            </ul>
+		        </section>
+		        <section>
+		            <h2>Fine-tuning</h2>
+		            <p><img src="img/tune.png" height="400px"></p>
+		            <ul>
+		                <li>Relevant docs: make them closer to query</li>
+		                <li>Irrelevant docs: make them further from query</li>
+		            </ul>
+		        </section>
+		        <section>
+		            <h2>What is positive and negative?</h2>
+		            <p><img src="img/cvr-noise.png" height="400px"></p>
+		            <ul>
+		                <li>1 click, 3 impressions = 33% CTR?</li>
+		            </ul>
+		        </section>
+		        <section>
+		            <h2>Mixing clicks and confidence</h2>
+		            <p><img src="img/bayes-cvr.png"></p>
+		            <ul>
+		                <li><strong>Bayes correction</strong>: mix prior and posterior</li>
+		                <li><strong>Low confidence</strong>: strong shift to avg</li>
+		                <li><strong>High confidence</strong>: almost no shift to avg</li>
+		            </ul>
+		            <p><small>[1]: Haystack US22: R.Kriegler, <a
+		                        href="https://www.youtube.com/watch?v=wa88XShl7hs">Modelling implicit user feedback for
+		                        optimising
+		                        e-commerce search</a></small></p>
+		        </section>
+		        <section>
+		            <h2>Bayes corrected CVR as label</h2>
+		            <p><img src="img/cvr-noise-bayes.png" height="550px"></p>
+		        </section>
+		        <section>
+		            <h2>Bayes corrected CVR as label</h2>
+		            <p><img src="img/cvr-noise-bayes2.png" height="550px"></p>
+		        </section>
+		        <section>
+		            <h3>demo</h3>
+		        </section>
+		        <section>
+		          <h2>Implicit labels are noisy</h2>
+		          <ul>
+		            <li><strong>High confidence, avg CVR</strong>: oops</li>
+		            <li><strong>Long tail queries</strong>: not enough data to reach confidence</li>
+		          </ul>
+		        </section>
+		        <section>
+		          <h2>Future plans</h2>
+		          <img src="img/ce.png">
+		          <ul>
+		            <li><strong>LLM relabeling</strong>: use explicit labels to fine-tune <i>Cross-Encoder</i></li>
+		            <li><strong>Llama3 CE</strong>: much faster convergence on small data</li>
+		            <li><strong>Distillation</strong>: train embeddings on re-labeled dataset</li>
+		          </ul>
+		          <br><br>
+		          <small>[1] - sbert.net: Cross-Encoders</small>
+		        </section>
+		        <section>
+		        	<h2>Non-English search</h2>
+		        	<img src="img/langs.png" height="300px">
+		        	<p><strong>Problem:</strong> all MTEB leaderboard models are English</p>
+		        </section>
+		        <section>
+		            <h2>Multilingual search</h2>
+		            <p>Guess the amount of non-english train samples:</p>
+		            <p><img src="img/e5m2.png">&nbsp;<img src="img/e5m.png"></p>
+		            <small>[1] L.Wang et al. Multilingual E5 Text Embeddings: A Technical Report</small>
+		        </section>
+		        <section>
+		            <h2>Out of domain</h2>
+		            <p><img src="img/miracl.png" height="300px"></p>
+		            <p>Food & groceries search - out of domain 😭 </p>
+		            <br>
+		            <small>[1] - <a href="https://blog.vespa.ai/simplify-search-with-multilingual-embeddings/">J.Bergum: Vespa Blog - Simplify Search with Multilingual Embedding Models</a></small>
+		        </section>
+		        <section>
+		        	<h2>Fine-tuning on implicit data 💀</h2>
+		        	<p>Confidence based labels = more bias to English</p>
+		        	<img src="img/langbias.png">
+		        	<p><strong>Hack</strong>: up-sample non-English training data (and get more noise!)</p>
+		        </section>
+		        <section>
+		        	<h3>demo</h3>
+		        </section>
+		        <section>
+		        	<h2>Mixed language data</h2>
+		        	<img src="img/mixlang.png" height="300px">
+		        	<p><strong>Worked well:</strong> mixed language data fine-tuning</p>
+		        </section>
+		        <section>
+		        	<h2>Future plans</h2>
+		        	<ul style="margin: 0px;">
+		        		<li>Experiment #1: machine-translation assisted fine-tuning</li>
+		        		<pre style="margin: 0px;"><code>
+		{
+			"query": ["water", "wasser", "水", "ماء", "agua"],
+			"positive": ["Oasis Drinking Water", "Oasis Trinkwasser", "綠洲飲用水"],
+			"negative": ["Coca-Cola Zero", "可口可樂零"]
+		}
+		        		</code></pre>
+		        		<li>Experiment #2: distill multi-lingual from English-biased model</li>
+
+		        	</ul>
+		        	<p ><img src="img/mdistill.png" height="200px" style="margin: 0px;"></p>
+		        	<small>[1]: <a href="https://sbert.net/examples/training/multilingual/README.html">sbert.net: Training Examples » Multilingual Models</a></small>
+		        </section>
+		        <section>
+		            <h2>Semantic search halting problem</h2>
+		            <p><strong>Problem</strong>: semantic search always has something found</p>
+		            <img src="img/mices.png">
+		        </section>
+		        <section>
+		        	<h3>demo</h3>
+		        </section>
+		        <section>
+		        	<h2>Finding a perfect threshold</h2>
+		        	<img src="img/e5-dist-train.png">
+		        	<p><strong>Attempt #1</strong>: set 0.7 as threshold => 70% zero results</p>
+		        </section>
+		        <section>
+		        	<h2>Attempt #2: similar queries?</h2>
+		        	<p>Ecommerce: <strong>a lot of repeated queries!</strong></p>
+		        	<ul>
+		        		<li>Find a "good enough" threshold for all seen queries</li>
+		        		<li>Threshold of unseen query = avg(<strong>threshold of top-N seen q</strong>)</li>
+		        	</ul>
+		        	<img src="img/perquery.png" height="300px" style="margin-bottom: 0px;">
+		        	<p>FAIL: too much noise</p>
+		        </section>
+		        <section>
+		        	<h2>Threshold depends on the model!</h2>
+		        	<img src="img/temp.png" height="500px" style="margin: 0px;">
+		        	<p><strong>InfoNCE training temperature</strong>: model confidence level</p>
+		        </section>
+		        <section>
+		        	<h2>Query length and threshold</h2>
+		        	<img src="img/peya.png">
+		        	<p>Longer the query - higher the cosine similarity!</p>
+		        </section>
+		        <section>
+		        	<h2>Language and threshold</h2>
+		        	<img src="img/es-ar.png">
+		        	<p>Left: Spanish, right: Arabic</p>
+		        	<p>More training data = more model confidence!</p>
+		        </section>
+		        <section>
+		        	<h2>#3: language/token threshold</h2>
+		        	<p>Pre-computed thresholds:</p>
+		        	<ul>
+		        		<li>Single and multi-token</li>
+		        		<li>Per each brand (and language)</li>
+		        		<li>e5-base-multilingual: temp=0.05, range=0.62..0.70</li>
+		        	</ul>
+		        </section>
             </div>
         </div>
 
