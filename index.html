@@ -76,7 +76,7 @@
 		                        <ul>
 		                            <li>Large inventory: ~20M items</li>
 		                            <li>Diverse multi-token requests</li>
-		                            <li>10% (<strong>OMG!</strong>) zero results rate</li>
+		                            <li>~10% (<strong>OMG!</strong>) zero results rate</li>
 		                        </ul>
 		                        <br><br/>
 		                        <p>Multi-token, long tail queries 🔴</p>
@@ -89,9 +89,9 @@
 		            <h2>Precision vs Recall</h2>
 		            <p><img src="img/cola.png" height="300px"></p>
 		            <ul>
-		                <li><strong>coca AND cola AND zero</strong>: zero results</li>
-		                <li><strong>coca OR cola OR zero</strong>: matches pepsi</li>
-		                <li><strong>coca AND cola AND (zero OR light)</strong>: good luck</li>
+		                <li class="fragment"><strong>coca AND cola AND zero</strong>: zero results</li>
+		                <li class="fragment"><strong>coca OR cola OR zero</strong>: matches pepsi</li>
+		                <li class="fragment"><strong>coca AND cola AND (zero OR light)</strong>: good luck</li>
 		            </ul>
 		        </section>
 		        <section>
@@ -106,11 +106,11 @@
 		        </section>
 		        <section>
 		            <h2>Customer intent</h2>
-		            <img src="img/tomato-e5.png" height="450px">
+		            <img src="img/tomato-e5.png" height="500px">
 		        </section>
 		        <section>
 		            <h2>Customer intent</h2>
-		            <img src="img/tomato-e5-cvr.png" height="450px">
+		            <img src="img/tomato-e5-cvr.png" height="500px">
 		        </section>
 		        <section>
 		            <p><img src="img/mistake.png" height="400px"></p>
@@ -121,7 +121,7 @@
 		        </section>
 		        <section>
 		            <h2>Bigger models?</h2>
-		            <img src="img/cats.png">
+		            <img src="img/cats.png" height="400px">
 		        </section>
 		        <section>
 		            <h3>demo</h3>
@@ -146,7 +146,8 @@
 		        <section>
 		            <h2>First step is still the same</h2>
 		            <p>You cannot improve search if you cannot measure it</p>
-		            <img src="img/quepid.png" height="450px">
+		            <img src="img/quepid.png" height="450px" style="margin: 0px;">
+		            <p><small>[0] - <a href="https://github.com/o19s/quepid">github.com/o19s/quepid</a></small></p>
 		        </section>
 		        <section>
 		            <h2>Relevance tuning?</h2>
@@ -309,6 +310,86 @@
 		        		<li>e5-base-multilingual: temp=0.05, range=0.62..0.70</li>
 		        	</ul>
 		        </section>
+		        <section>
+		        	<h2>Does it work?</h2>
+		        	<p>A/B test: Control vs <i>Hybrid for 2+ tokens</i></p>
+		        	<table class="fragment">
+		        		<thead>
+		        			<tr>
+		        				<td><strong>Region</strong></td>
+		        				<td><strong>GMV</strong></td>
+		        				<td><strong>Orders</strong></td>
+		        				<td><strong>Clicks</strong></td>
+		        				<td><strong>Click pos</strong></td>
+		        				<td><strong>ZRR</strong></td>
+		        			</tr>
+		        		</thead>
+		        		<tbody>
+		        			<tr>
+		        				<td>SA</td>
+		        				<td><span style="color: green;">+3.9%</span></td>
+		        				<td><span style="color: green;">+1.6%</span></td>
+		        				<td><span style="color: green;">+4.2%</span></td>
+		        				<td><span style="color: green;">-3.4%</span></td>
+		        				<td>N/A</td>
+		        			</tr>
+		        			<tr>
+		        				<td>UAE</td>
+		        				<td><span style="color: green;">+0.7%</span></td>
+		        				<td><span style="color: green;">+0.7%</span></td>
+		        				<td><span style="color: green;">+2.5%</span></td>
+		        				<td><span style="color: green;">-2.4%</span></td>
+		        				<td><span style="color: green;">-40%</span></td>
+		        			</tr>
+		        			<tr>
+		        				<td>APAC</td>
+		        				<td><span style="color: green;">+1%</span></td>
+		        				<td><span style="color: red;">0%</span></td>
+		        				<td><span style="color: green;">+1.2%</span></td>
+		        				<td><span style="color: green;">-1%</span></td>
+		        				<td><span style="color: green;">-27%</span></td>
+		        			</tr>
+		        			<tr>
+		        				<td>Turkey</td>
+		        				<td><span style="color: green;">+0.6%</span></td>
+		        				<td><span style="color: green;">+0.4%</span></td>
+		        				<td><span style="color: green;">+1.14%</span></td>
+		        				<td><span style="color: red;">0%</span></td>
+		        				<td>N/A</td>
+		        			</tr>
+		        			<tr>
+		        				<td>Latam</td>
+		        				<td><span style="color: red;">0%</span></td>
+		        				<td><span style="color: red;">0%</span></td>
+		        				<td><span style="color: green;">+0.5%</span></td>
+		        				<td><span style="color: red;">0%</span></td>
+		        				<td><span style="color: green;">-12%</span></td>
+		        			</tr>
+		        		</tbody>
+		        	</table>
+		        </section>
+		        <section>
+		        	<h2>Does it work? (yes/no)</h2>
+		        	<p style="margin: 0px;"><img src="img/works.png" height="400px" style="margin: 0px;"></p>
+		        	<ul>
+		        		<li><strong>Depends on baseline</strong>: tough to beat well-built lexical search</li>
+		        		<li><strong>Focus on recall</strong>: use reranking for precision</li>
+		        		<li><strong>Should you fine-tune</strong>: yes</li>
+		        	</ul>
+		        </section>
+				<section>
+					<h2>Links</h2>
+					<ul>
+						<li><strong>Linkedin</strong>: <a
+								href="https://www.linkedin.com/in/romangrebennikov/">linkedin.com/in/romangrebennikov/</a>
+						</li>
+						<li><strong>MTEB Leaderboard</strong>: <a href="https://huggingface.co/spaces/mteb/leaderboard">huggingface.co/spaces/mteb/leaderboard</a></li>
+						<li><strong>Sentence-transformers v3</strong>: <a href="https://sbert.net/">sbert.net/</a></li>
+					</ul>
+				</section>
+				<section>
+					<h2>questions?</h2>
+				</section>
             </div>
         </div>
 
