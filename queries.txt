@@ -1,0 +1,11 @@
+intent:
+tomato
+fresh pink tomato
+
+multilingual:
+water wasser  ماء  
+water with gas, ماء مع غاز , agua con gas
+forms: ("مياه", "ماء","ماء","مويه", "موية,"water")
+
+halting:
+tahini FP_SG
